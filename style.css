@@ -1,68 +1,46 @@
-/* Impostazioni generali */
-body {
-    font-family: Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-}
-
-.container {
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 80%;
-    max-width: 800px;
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #6d4c41;
-}
-
-h2 {
-    color: #6d4c41;
-    margin-top: 20px;
-}
-
-p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-#countdown {
-    display: flex;
-    justify-content: space-around;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-#countdown div {
-    background-color: #ffccbc;
-    padding: 15px;
-    border-radius: 10px;
-    width: 80px;
-    text-align: center;
-}
-
-#countdown div span {
-    display: block;
-    font-size: 2.5rem;
-    color: #6d4c41;
-}
-
-#info {
+/* Stile per il form di conferma */
+#confirmation {
     margin-top: 40px;
 }
 
-#info p {
-    font-size: 1.1rem;
+#confirmation h2 {
+    font-size: 1.8rem;
+    color: #6d4c41;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+form label {
+    font-size: 1rem;
     color: #333;
+    margin-bottom: 5px;
+}
+
+form input, form select {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #8e6e56;
 }
