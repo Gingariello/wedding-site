@@ -1,3 +1,9 @@
+/* Applichiamo l'animazione al passaggio del mouse */
+h1:hover {
+    color: #ff6347; /* Cambia il colore al passaggio del mouse */
+    transform: scale(1.1); /* Ingrandisce leggermente il testo */
+    transition: all 0.3s ease; /* Aggiunge una transizione fluida */
+}
 /* Esempio di base per il sito del matrimonio */
 
 body {
