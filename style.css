@@ -1,3 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #b28e7e;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#countdown div {
+    padding: 20px;
+    background-color: #f8c79d;
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+}
+
+#countdown div span {
+    display: block;
+    font-size: 2.5rem;
+    color: #7a4f37;
+}
+
+
+
+
+
 /* Applichiamo l'animazione al passaggio del mouse */
 h1:hover {
     color: #ff6347; /* Cambia il colore al passaggio del mouse */
