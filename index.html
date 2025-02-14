@@ -29,6 +29,41 @@
             <p><strong>Chiesa:</strong> Chiesa di San Giovanni, Via Roma, 123</p>
             <p><strong>Ricevimento:</strong> Tenuta Villa Verde, Via delle Rose, 456</p>
         </section>
+
+        <!-- Collage di foto -->
+        <section id="photo-collage">
+            <h2>I nostri momenti speciali</h2>
+            <div class="collage">
+                <img src="download.jpg" alt="Foto 1" class="collage-item">
+                <img src="foto2.jpg" alt="Foto 2" class="collage-item">
+                <img src="foto3.jpg" alt="Foto 3" class="collage-item">
+                <img src="foto4.jpg" alt="Foto 4" class="collage-item">
+                <img src="foto5.jpg" alt="Foto 5" class="collage-item">
+                <img src="foto6.jpg" alt="Foto 6" class="collage-item">
+            </div>
+        </section>
+
+        <!-- Form di conferma partecipazione -->
+        <section id="confirmation">
+            <h2>Conferma la tua partecipazione</h2>
+            <form action="https://formspree.io/f/maykpdzq" method="POST" id="confirmation-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required placeholder="Inserisci il tuo nome">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Inserisci la tua email">
+
+                <label for="participation">Parteciperai?</label>
+                <select id="participation" name="participation" required>
+                    <option value="">Scegli...</option>
+                    <option value="Si">Sì</option>
+                    <option value="No">No</option>
+                </select>
+
+                <button type="submit">Invia la conferma</button>
+            </form>
+        </section>
+
     </div>
 
     <script src="script.js"></script>
