@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giuseppe & Maria 2025</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script> <!-- Aggiungi la tua chiave API -->
 </head>
 <body>
     <!-- Sezione di Benvenuto -->
@@ -32,22 +33,56 @@
         <p><strong>Location:</strong> Villa dei Fiori, Via delle Rose, 123</p>
     </section>
 
+    <!-- Sezione Countdown -->
+    <section id="countdown" class="countdown-section">
+        <h2>Il nostro grande giorno è in arrivo!</h2>
+        <div id="countdown-timer"></div>
+    </section>
+
+    <!-- Sezione Galleria -->
+    <section id="gallery" class="gallery-section">
+        <h2>La nostra Galleria</h2>
+        <div class="gallery-container">
+            <div class="gallery-item"><img src="https://via.placeholder.com/300x300" alt="Immagine 1"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/300x300" alt="Immagine 2"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/300x300" alt="Immagine 3"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/300x300" alt="Immagine 4"></div>
+        </div>
+    </section>
+
+    <!-- Sezione Mappa -->
+    <section id="map" class="map-section">
+        <h2>Come arrivare</h2>
+        <div id="map-container"></div>
+    </section>
+
     <!-- Sezione RSVP -->
     <section id="rsvp-form" class="rsvp-section">
         <h2>Conferma la tua presenza</h2>
         <form id="rsvp" action="#" method="POST">
             <label for="name">Il tuo nome:</label>
             <input type="text" id="name" name="name" required>
-
             <label for="email">La tua email:</label>
             <input type="email" id="email" name="email" required>
-
             <label for="attendance">Parteciperai?</label>
             <select id="attendance" name="attendance">
                 <option value="yes">Sì</option>
                 <option value="no">No</option>
             </select>
+            <button type="submit">Invia</button>
+        </form>
+    </section>
 
+    <!-- Sezione Contatto -->
+    <section id="contact" class="contact-section">
+        <h2>Contattaci</h2>
+        <form id="contact-form" action="#" method="POST">
+            <label for="contact-name">Nome:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+            <label for="contact-message">Messaggio:</label>
+            <textarea id="contact-message" name="contact-message" required></textarea>
             <button type="submit">Invia</button>
         </form>
     </section>
