@@ -3,68 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Grande Giorno</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Giuseppe & Maria 2025</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Il nostro matrimonio</h1>
-            <p>Un giorno speciale che vogliamo condividere con voi!</p>
-        </header>
+    <!-- Sezione di Benvenuto -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Giuseppe & Maria</h1>
+            <p>Un giorno speciale da condividere insieme.</p>
+            <a href="#rsvp-form" class="button">Conferma la tua presenza</a>
+        </div>
+    </header>
 
-        <section id="countdown-section">
-            <h2>Countdown al nostro matrimonio</h2>
-            <div id="countdown">
-                <div id="days"></div>
-                <div id="hours"></div>
-                <div id="minutes"></div>
-                <div id="seconds"></div>
-            </div>
-        </section>
+    <!-- Sezione Chi Siamo -->
+    <section id="about" class="about-section">
+        <h2>Chi siamo</h2>
+        <div class="about-content">
+            <p>Siamo Giuseppe e Maria, e questo è il nostro giorno speciale! Siamo felici di condividere con voi questo momento unico e di vedere le persone che amiamo più vicine che mai.</p>
+        </div>
+    </section>
 
-        <section id="info">
-            <h2>Dettagli dell'evento</h2>
-            <p><strong>Data:</strong> 1 Giugno 2025</p>
-            <p><strong>Chiesa:</strong> Chiesa di San Giovanni, Via Roma, 123</p>
-            <p><strong>Ricevimento:</strong> Tenuta Villa Verde, Via delle Rose, 456</p>
-        </section>
+    <!-- Sezione Info Evento -->
+    <section id="event-info" class="event-info-section">
+        <h2>Informazioni sull'evento</h2>
+        <p><strong>Data:</strong> 18 Settembre 2025</p>
+        <p><strong>Orario:</strong> 16:00</p>
+        <p><strong>Location:</strong> Villa dei Fiori, Via delle Rose, 123</p>
+    </section>
 
-        <!-- Collage di foto -->
-        <section id="photo-collage">
-            <h2>I nostri momenti speciali</h2>
-            <div class="collage">
-                <img src="download.jpg" alt="Foto 1" class="collage-item">
-                <img src="foto2.jpg" alt="Foto 2" class="collage-item">
-                <img src="foto3.jpg" alt="Foto 3" class="collage-item">
-                <img src="foto4.jpg" alt="Foto 4" class="collage-item">
-                <img src="foto5.jpg" alt="Foto 5" class="collage-item">
-                <img src="foto6.jpg" alt="Foto 6" class="collage-item">
-            </div>
-        </section>
+    <!-- Sezione RSVP -->
+    <section id="rsvp-form" class="rsvp-section">
+        <h2>Conferma la tua presenza</h2>
+        <form id="rsvp" action="#" method="POST">
+            <label for="name">Il tuo nome:</label>
+            <input type="text" id="name" name="name" required>
 
-        <!-- Form di conferma partecipazione -->
-        <section id="confirmation">
-            <h2>Conferma la tua partecipazione</h2>
-            <form action="https://formspree.io/f/maykpdzq" method="POST" id="confirmation-form">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required placeholder="Inserisci il tuo nome">
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Inserisci la tua email">
+            <label for="email">La tua email:</label>
+            <input type="email" id="email" name="email" required>
 
-                <label for="participation">Parteciperai?</label>
-                <select id="participation" name="participation" required>
-                    <option value="">Scegli...</option>
-                    <option value="Si">Sì</option>
-                    <option value="No">No</option>
-                </select>
+            <label for="attendance">Parteciperai?</label>
+            <select id="attendance" name="attendance">
+                <option value="yes">Sì</option>
+                <option value="no">No</option>
+            </select>
 
-                <button type="submit">Invia la conferma</button>
-            </form>
-        </section>
-
-    </div>
+            <button type="submit">Invia</button>
+        </form>
+    </section>
 
     <script src="script.js"></script>
 </body>
